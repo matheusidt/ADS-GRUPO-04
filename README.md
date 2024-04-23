@@ -3,7 +3,7 @@
 <p>Bem-vindo ao repositório do projeto Ajuda CEUNSP!<br> Esse aplicativo será desenvolvido para atender às necessidades dos alunos da CEUNSP, auxiliando-os na localização de suas salas de aula e no acesso às informações sobre os assuntos tratados em cada uma delas.</p>
 
 <h2><b>Objetivo</b></h2>
-<p>O objetivo principal do projeto é proporcionar uma experiência mais fácil e intuitiva para os alunos da CEUNSP, tornando mais simples a sua rotina acadêmica e facilitando o acesso às informações relevantes sobre suas disciplinas.</p>
+<p>O objetivo principal do projeto é eliminar a dor de cabeça dos alunos da CEUNSP em relação à localização das salas de aula, facilitando o acesso às informações sobre as disciplinas e proporcionando uma experiência mais tranquila e organizada durante o dia letivo.</p>
 
 <h2><b>Funcionalidades</b></h2>
 <p><b>Informações sobre Disciplinas:</b> Os alunos podem acessar informações sobre as disciplinas, como horários, professores responsáveis e conteúdo programático.<br>
