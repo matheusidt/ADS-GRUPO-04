@@ -6,6 +6,6 @@
 <p>O objetivo principal do projeto é proporcionar uma experiência mais fácil e intuitiva para os alunos da CEUNSP, tornando mais simples a sua rotina acadêmica e facilitando o acesso às informações relevantes sobre suas disciplinas.</p>
 
 <h2><b>Funcionalidades</b></h2>
-<p><b>Localização de Salas:</b> Os alunos podem encontrar facilmente suas salas de aula, utilizando um mapa interativo do campus.
-<b>Informações sobre Disciplinas:</b> Os alunos podem acessar informações sobre as disciplinas, como horários, professores responsáveis e conteúdo programático.
-<b>Reserva de Salas:</b> Os professores podem reservar salas de aula para suas aulas, garantindo a disponibilidade do espaço.</p>
+<p><b>Localização de Salas:</b> Os alunos podem encontrar facilmente suas salas de aula, utilizando um mapa interativo do campus.<br>
+<b>Informações sobre Disciplinas:</b> Os alunos podem acessar informações sobre as disciplinas, como horários, professores responsáveis e conteúdo programático.<br>
+<b>Reserva de Salas:</b> Os professores podem reservar salas de aula para suas aulas, garantindo a disponibilidade do espaço.</p><br>
