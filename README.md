@@ -11,7 +11,7 @@
 
 <h2><b>Entregas Realizadas</b></h2>
 <p><b>(#P1) Documento de abertura do projeto<br>
-(#P2) Diagrama de casos de usos
+(#P2) Diagrama de casos de usos <br>
 (#P3) Diagrama de estado 
 </b></p>
 
