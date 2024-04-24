@@ -11,11 +11,12 @@
 
 <h2><b>Entregas Realizadas</b></h2>
 <p><b>(#P1) Documento de abertura do projeto<br>
-(#P2) Diagrama de casos de usos</b></p>
+(#P2) Diagrama de casos de usos
+(#P3) Diagrama de estado 
+</b></p>
 
 <h2><b>Lista de pendências restante</b></h2>
-<p><b>(#P3) diagrama de estado<br>
-(#P3) Diagrama de Classe<br>
+<p><b>(#P3) Diagrama de Classe<br>
 (#P4) Diagrama de Interação entre Classes</b></p>
 
 <h2><b>Integrantes do grupo</b></h2>
