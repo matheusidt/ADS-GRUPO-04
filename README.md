@@ -9,6 +9,15 @@
 <p><b>Informações sobre Disciplinas:</b> Os alunos podem acessar informações sobre as disciplinas, como horários, professores responsáveis e conteúdo programático.<br>
 <b>Reserva de Salas:</b> Os professores podem reservar salas de aula para suas aulas, garantindo a disponibilidade do espaço.</p>
 
+<h2><b>Entregas Realizadas</b></h2>
+<p><b>(#P1) Documento de abertura do projeto<br>
+(#P2) Diagrama de casos de usos</b></p>
+
+<h2><b>Lista de pendências restante</b></h2>
+<p><b>(#P3) diagrama de estado<br>
+(#P3) Diagrama de Classe<br>
+(#P4) Diagrama de Interação entre Classes</b></p>
+
 <h2><b>Integrantes do grupo</b></h2>
 <p>Crislaine Francisca de Almeida<br>
 Gabriel Felipe<br>
