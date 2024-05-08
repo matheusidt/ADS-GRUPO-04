@@ -13,6 +13,7 @@
 <p><b>(#P1) Documento de abertura do projeto<br>
 (#P2) Diagrama de casos de usos <br>
 (#P3) Diagrama de estado 
+(#P3) Diagrama de sequência
 </b></p>
 
 <h2><b>Lista de pendências restante</b></h2>
