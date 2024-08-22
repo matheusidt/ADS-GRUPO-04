@@ -13,17 +13,16 @@
 <p><b>(#P1) Documento de abertura do projeto<br>
 (#P2) Diagrama de casos de usos <br>
 (#P3) Diagrama de estado<br>
-(#P3) Diagrama de sequência
-</b></p>
+(#P3) Diagrama de sequência<br>
+(#P3) Diagrama de Classe<br>
+(#P4) Diagrama de Interação entre Classes</p>
 
 <h2><b>Lista de pendências restante</b></h2>
-<p><b>(#P3) Diagrama de Classe<br>
-(#P4) Diagrama de Interação entre Classes</b></p>
 
 <h2><b>Integrantes do grupo</b></h2>
 <p>Crislaine Francisca de Almeida<br>
 Gabriel Felipe<br>
-Gilberto Junior<br>
+Miguel Raveli<br>
 Julio César<br>
 Marcos Reis<br>
 Matheus Carvalho<br>
