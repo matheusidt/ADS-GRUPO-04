@@ -1,4 +1,5 @@
 # ADS-GRUPO-04
+
 <h1> <b>Ajuda CEUNSP</b> </h1>
 <p>Bem-vindo ao repositório do projeto Ajuda CEUNSP!<br> Esse aplicativo será desenvolvido para atender às necessidades dos alunos da CEUNSP, auxiliando-os na localização de suas salas de aula e no acesso às informações sobre os assuntos tratados em cada uma delas.</p>
 
@@ -16,6 +17,11 @@
 (#P3) Diagrama de sequência<br>
 (#P3) Diagrama de Classe<br>
 (#P4) Diagrama de Interação entre Classes</p>
+
+<h2><b>Use esse código para baixar as dependencias</b></h2>
+```console
+npm i react-router-dom react-icons react-redux @mui/material @emotion/react @emotion/styled react-bootstrap bootstrap
+```
 
 <h2><b>Lista de pendências restante</b></h2>
 
