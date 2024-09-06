@@ -59,7 +59,7 @@ body {
   }
 
   form label {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   form input {
     font-size: 1em;
@@ -89,17 +89,40 @@ body {
     border: none;
   }
 
+  .signin a {
+    text-decoration: none;
+    color: #eeeeee;
+  }
   .signup {
     background-color: #eeeeee;
-    color: var(--color-blue-ligth);
     border: none;
   }
+  
+  .signinGoogle{
+    background-color: var(--color-blue-ligth);
+    color: #eeeeee;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-  .buttons button {
+  .signinGoogle img{
+    width: 20%;
+  }
+
+
+  .signup a {
+    text-decoration: none;
+    color: var(--color-blue-ligth);
+  }
+
+  .buttons button,
+  a {
     padding: 5px;
     width: 50%;
     border-radius: 10px;
-    font-size: 1.03em;
+    font-size: 0.9em;
   }
 }
 @media (min-width: 480px) {

@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ajuda CEUNSP - Login</title>
+    <title>Ajuda CEUNSP - Cadastro</title>
     <link rel="stylesheet" href="styles/login.css" />
   </head>
   <body>
     <main>
-      <h1>Login</h1>
-      <form id="login-form">
+      <h1>Cadastro</h1>
+      <form id="signup-form">
+        <input type="text" id="name" placeholder="Digite seu nome" required />
         <input
           type="email"
           id="email"
@@ -22,9 +23,9 @@
           placeholder="Digite sua senha"
           required
         />
-        <button type="button" id="login-btn">Entrar</button>
+        <button type="button" id="signup-btn">Cadastrar</button>
       </form>
-      <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+      <p>Já tem uma conta? <a href="login.html">Entre aqui</a></p>
     </main>
     <script type="module" src="scripts/auth.js"></script>
     <script type="module" src="scripts/auth-check.js"></script>
