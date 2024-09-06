@@ -19,9 +19,8 @@
 (#P4) Diagrama de Interação entre Classes</p>
 
 <h2><b>Use esse código para baixar as dependencias</b></h2>
-```console
+
 npm i react-router-dom react-icons react-redux @mui/material @emotion/react @emotion/styled react-bootstrap bootstrap
-```
 
 <h2><b>Lista de pendências restante</b></h2>
 
