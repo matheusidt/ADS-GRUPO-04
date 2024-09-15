@@ -1,148 +1,284 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #073d75;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #073D75;
-}
-
-.container {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    background-color: #073D75;
+    background-color: #073d75;
     border-radius: 10px;
     overflow: hidden;
-}
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: solid;
+  }
 
-.left-panel {
+  .left-panel {
     flex: 1;
-    background-color: #073D75;
+    background-color: #073d75;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
+  }
 
-.logo {
+  .logo {
     width: 100px;
     margin-bottom: 20px;
-}
+  }
 
-h1 {
+  h1 {
     font-size: 24px;
     margin-bottom: 10px;
-}
+  }
 
-.left-panel p {
+  .left-panel p {
     font-size: 18px;
-}
+  }
 
-.right-panel {
+  .right-panel {
     flex: 1;
-    background-color: #4A90E2;
+    background-color: #4a90e2;
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    text-align: left;
+  }
 
-.login-form {
+  .login-form {
     width: 100%;
     max-width: 400px;
-}
+  }
 
-.form-group {
+  .form-group {
     margin-bottom: 20px;
-}
+  }
 
-label {
+  label {
     font-size: 14px;
     color: white;
     margin-bottom: 5px;
     display: block;
-}
+  }
 
-.input-icon {
+  .input-icon {
     position: relative;
-}
+  }
 
-.input-icon input {
+  .input-icon input {
     width: 100%;
     padding: 10px;
     padding-left: 40px;
     border: none;
     border-radius: 5px;
-    background-color: #2E3B4E;
+    background-color: #2e3b4e;
     color: white;
-}
+  }
 
-.input-icon .icon {
+  .input-icon .icon {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
     color: white;
-}
+  }
 
-input::placeholder {
-    color: #B0BEC5;
-}
+  input::placeholder {
+    color: #b0bec5;
+  }
 
-.toggle-password {
+  .toggle-password {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     color: white;
-}
+  }
 
-.remember-me {
+  .remember-me {
     display: flex;
     align-items: center;
     color: white;
-}
+  }
 
-button {
+  button {
     width: 100%;
     padding: 10px;
-    background-color: #1A2738;
+    background-color: #1a2738;
     border: none;
     color: white;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
 
-button:hover {
-    background-color: #3A4B61;
-}
+  button:hover {
+    background-color: #3a4b61;
+  }
 
-.forgot-password {
+  .forgot-password {
     display: block;
     margin-top: 10px;
     text-align: right;
     color: white;
     text-decoration: none;
-}
+  }
 
-.forgot-password:hover {
+  .forgot-password:hover {
     text-decoration: underline;
-}
+  }
 
-p {
+  p {
     color: white;
     text-align: center;
     margin-top: 10px;
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
