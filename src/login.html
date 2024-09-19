@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajuda CEUNSP - Login</title>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Login</h1>
+      <form id="login-form">
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu email"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Digite sua senha"
+          required
+        />
+        <button type="button" id="login-btn">Entrar</button>
+      </form>
+      <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </main>
+    <script type="module" src="scripts/auth.js"></script>
+    <script type="module" src="scripts/auth-check.js"></script>
+  </body>
+</html>
