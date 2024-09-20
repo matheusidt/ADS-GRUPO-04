@@ -31,7 +31,6 @@ body {
     width: 100%;
     padding: 20px;
     text-align: center;
-    border: solid;
   }
 
   .left-panel {
@@ -46,8 +45,11 @@ body {
   }
 
   .logo {
-    width: 100px;
+    width: 100%;
+    height: 10vh;
     margin-bottom: 20px;
+    background: url("../../imgs/logo.svg") no-repeat center center;
+    background-size: contain;
   }
 
   h1 {
@@ -67,6 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: left;
+    border-radius: 10px;
   }
 
   .login-form {
@@ -126,6 +129,12 @@ body {
     color: white;
   }
 
+  .remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre a checkbox e o texto */
+    margin-bottom: 5px;
+    vertical-align: middle; /* Centraliza a checkbox verticalmente */
+  }
+
   button {
     width: 100%;
     padding: 10px;
@@ -142,10 +151,35 @@ body {
     background-color: #3a4b61;
   }
 
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-btn {
+    background-color: #fff; /* Fundo branco */
+    color: #1f497d; /* Texto da cor do botão de login */
+    border: 2px solid #1f497d; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .register-btn:hover {
+    background-color: #f0f0f0; /* Leve alteração de cor ao passar o mouse */
+  }
+
   .forgot-password {
     display: block;
     margin-top: 10px;
-    text-align: right;
+    text-align: center;
     color: white;
     text-decoration: none;
   }
@@ -165,15 +199,716 @@ body {
 }
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073d75;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-panel {
+    flex: 1;
+    background-color: #073d75;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+    background: url("../../imgs/logo.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .left-panel p {
+    font-size: 18px;
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: #4a90e2;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    width: 80vw;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .input-icon {
+    position: relative;
+  }
+
+  .input-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e3b4e;
+    color: white;
+  }
+
+  .input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #b0bec5;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre a checkbox e o texto */
+    margin-bottom: 5px;
+    vertical-align: middle; /* Centraliza a checkbox verticalmente */
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a2738;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3a4b61;
+  }
+
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-btn {
+    background-color: #fff; /* Fundo branco */
+    color: #1f497d; /* Texto da cor do botão de login */
+    border: 2px solid #1f497d; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .register-btn:hover {
+    background-color: #f0f0f0; /* Leve alteração de cor ao passar o mouse */
+  }
+
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073d75;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-panel {
+    flex: 1;
+    background-color: #073d75;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+    background: url("../../imgs/logo.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .left-panel p {
+    font-size: 18px;
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: #4a90e2;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    width: 50vw;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .input-icon {
+    position: relative;
+  }
+
+  .input-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e3b4e;
+    color: white;
+  }
+
+  .input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #b0bec5;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre a checkbox e o texto */
+    margin-bottom: 5px;
+    vertical-align: middle; /* Centraliza a checkbox verticalmente */
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a2738;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3a4b61;
+  }
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-btn {
+    background-color: #fff; /* Fundo branco */
+    color: #1f497d; /* Texto da cor do botão de login */
+    border: 2px solid #1f497d; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .register-btn:hover {
+    background-color: #f0f0f0; /* Leve alteração de cor ao passar o mouse */
+  }
+
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073d75;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-panel {
+    flex: 1;
+    background-color: #073d75;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+    background: url("../../imgs/logo.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .left-panel p {
+    font-size: 24px;
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: #4a90e2;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .input-icon {
+    position: relative;
+  }
+
+  .input-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e3b4e;
+    color: white;
+  }
+
+  .input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #b0bec5;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre a checkbox e o texto */
+    margin-bottom: 5px;
+    vertical-align: middle; /* Centraliza a checkbox verticalmente */
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a2738;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3a4b61;
+  }
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-btn {
+    background-color: #fff; /* Fundo branco */
+    color: #1f497d; /* Texto da cor do botão de login */
+    border: 2px solid #1f497d; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .register-btn:hover {
+    background-color: #f0f0f0; /* Leve alteração de cor ao passar o mouse */
+  }
+
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073d75;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-panel {
+    flex: 1;
+    background-color: #073d75;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+    background: url("../../imgs/logo.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .left-panel p {
+    font-size: 29px;
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: #4a90e2;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    width: 40vw;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group input {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .input-icon {
+    position: relative;
+  }
+
+  .input-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e3b4e;
+    color: white;
+  }
+
+  .input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #b0bec5;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre a checkbox e o texto */
+    margin-bottom: 5px;
+    vertical-align: middle; /* Centraliza a checkbox verticalmente */
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a2738;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3a4b61;
+  }
+
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-btn {
+    background-color: #fff; /* Fundo branco */
+    color: #1f497d; /* Texto da cor do botão de login */
+    border: 2px solid #1f497d; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .register-btn:hover {
+    background-color: #f0f0f0; /* Leve alteração de cor ao passar o mouse */
+  }
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;

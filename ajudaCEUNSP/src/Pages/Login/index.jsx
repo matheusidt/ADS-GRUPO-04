@@ -1,8 +1,16 @@
 import React from "react";
 import { useState } from "react";
-import "./style.css"
+import "./style.css";
+import { FaKey } from "react-icons/fa6";
+import { PiIdentificationBadgeFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
+
+
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const [passWord, setPassWord] = useState();
+  const [email, setEmail] = useState();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -11,23 +19,26 @@ const Login = () => {
   return (
     <div className="container">
       <div className="left-panel">
-        <img src="logo.png" alt="Logo" className="logo" />
+        <div className="logo"></div>
+
         <h1>Acesse a plataforma</h1>
-        <p>FAM.BR</p>
       </div>
 
       <div className="right-panel">
         <form className="login-form">
           <div className="form-group">
-            <label htmlFor="cpf">CPF</label>
+            <label htmlFor="email">Email</label>
             <div className="input-icon">
               <input
                 type="text"
-                id="cpf"
-                name="cpf"
-                placeholder="Digite seu CPF"
+                id="email"
+                name="email"
+                placeholder="Digite seu Email"
               />
-              <i className="icon">🔑</i> {/* Replace with the proper icon */}
+              <i className="icon">
+                <PiIdentificationBadgeFill />
+              </i>{" "}
+              {/* Replace with the proper icon */}
             </div>
           </div>
 
@@ -39,7 +50,11 @@ const Login = () => {
                 id="password"
                 name="password"
                 placeholder="Digite sua senha"
-              />
+              />{" "}
+              <i className="icon">
+                <FaKey />
+              </i>{" "}
+              {/* Replace with the proper icon */}
               <i className="toggle-password" onClick={togglePasswordVisibility}>
                 {showPassword ? "🙈" : "👁️"}
               </i>
@@ -51,13 +66,15 @@ const Login = () => {
             <label htmlFor="remember">Lembrar</label>
           </div>
 
-          <button type="submit">Entrar na plataforma</button>
+          <div className="container-buttons">
+            <button type="submit">Entrar na plataforma</button>
+            <Link to={"/cadastrar"} type="button" className="register-btn">
+              Cadastrar
+            </Link>
+          </div>
           <a href="#" className="forgot-password">
             Esqueceu sua senha?
           </a>
-          <p>
-            Suporte: <a href="mailto:informatica@fam.br">informatica@fam.br</a>
-          </p>
         </form>
       </div>
     </div>

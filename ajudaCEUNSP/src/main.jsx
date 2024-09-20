@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
-import Login from "./Pages/Login/index.jsx";
+import Login from "./Pages/Login";
+import Cadastrar from "./Pages/Register";
 
 const router = createHashRouter([
   {
@@ -13,6 +14,10 @@ const router = createHashRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "cadastrar",
+        element: <Cadastrar />,
       },
     ],
   },
