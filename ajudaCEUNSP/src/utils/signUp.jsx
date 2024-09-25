@@ -1,9 +1,13 @@
 import * as firebaseAuth from "firebase/auth";
-export const signIn = (auth, email, password) => {
-  firebaseAuth
+export const signUp = async (auth, email, password) => {
+  await firebaseAuth
     .createUserWithEmailAndPassword(auth, email, password)
+    .then((data) => {
+      console.log(data.user);
+      w;
+    })
     .catch((error) => {
-      switch (error) {
+      switch (error.code) {
         case "auth/email-already-in-use":
           alert("Email já Cadastrado!");
           break;

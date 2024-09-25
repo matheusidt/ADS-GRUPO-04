@@ -5,12 +5,17 @@ import "./index.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Login from "./Pages/Login";
 import Cadastrar from "./Pages/Register";
+import Home from "./Pages/Home/index.jsx";
 
 const router = createHashRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "login",
         element: <Login />,

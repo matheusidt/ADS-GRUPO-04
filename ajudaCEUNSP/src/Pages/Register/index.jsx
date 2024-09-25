@@ -4,17 +4,17 @@ import { FaKey } from "react-icons/fa6";
 import { PiIdentificationBadgeFill } from "react-icons/pi";
 import { MdOutlineEmail } from "react-icons/md"; // Novo ícone para e-mail
 import { BsPersonFill } from "react-icons/bs"; // Novo ícone para nome
-import { signUp } from "../Login/utils/signUp";
+import { signUp } from "../../utils/signUp";
 import { Link } from "react-router-dom";
-import { app } from "../Login/utils/fireBaseApp";
+import { app } from "../../utils/fireBaseApp";
 import * as firebaseAuth from "firebase/auth";
-const auth = firebaseAuth.initializeAuth(app);
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-
   const [passWord, setPassWord] = useState();
   const [email, setEmail] = useState();
+
+  const auth = firebaseAuth.getAuth(app);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -123,18 +123,13 @@ const Register = () => {
                 {showConfirmPassword ? "🙈" : "👁️"}
               </i>
             </div>
+            <Link
+              className="signUp-button"
+              onClick={() => signUp(auth, email, passWord)}
+            >
+              Cadastrar
+            </Link>
           </div>
-
-          {/* Termos de uso e política de privacidade */}
-          <div className="form-group remember-me">
-            <input type="checkbox" id="terms" />
-            <label htmlFor="terms">
-              Eu aceito os <a href="#">Termos de Uso</a> e a{" "}
-              <a href="#">Política de Privacidade</a>.
-            </label>
-          </div>
-
-          <Link onClick={() => signUp(auth, email, passWord)}>Registrar</Link>
         </form>
       </div>
     </div>
