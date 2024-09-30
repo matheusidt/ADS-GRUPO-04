@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Login from "./Pages/Login";
 import Cadastrar from "./Pages/Register";
 import Home from "./Pages/Home/index.jsx";
+import NoticesDetail from "./Pages/NoticesDetail/index.jsx";
 
 const router = createHashRouter([
   {
@@ -15,6 +16,10 @@ const router = createHashRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "OpenWarn/:id",
+        element: <NoticesDetail />,
       },
       {
         path: "login",

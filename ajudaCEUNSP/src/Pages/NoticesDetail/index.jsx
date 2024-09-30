@@ -1,21 +1,19 @@
 import React from "react";
-import "./Home.css";
-import NoticesTabel from "../../components/Notices";
+import "./NoticesDetail.css";
 import Header from "../../components/Header";
 import Profile from "../../components/Profile";
+import NoticesDetailContent from "../../components/NoticeDetailContent/NoticesDetailContent";
 
-const Home = () => {
+const NoticesDetail = () => {
   return (
     <div className="container">
       <Header />
       <div className="main-content">
         <Profile />
-        <div className="notices">
-          <NoticesTabel />
-        </div>
+        <NoticesDetailContent />
       </div>
     </div>
   );
 };
 
-export default Home;
+export default NoticesDetail;
