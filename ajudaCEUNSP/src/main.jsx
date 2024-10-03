@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import Cadastrar from "./Pages/Register";
 import Home from "./Pages/Home/index.jsx";
 import NoticesDetail from "./Pages/NoticesDetail/index.jsx";
+import SchedulePage from "./Pages/Schedule/index.jsx";
 
 const router = createHashRouter([
   {
@@ -28,6 +29,10 @@ const router = createHashRouter([
       {
         path: "cadastrar",
         element: <Cadastrar />,
+      },
+      {
+        path: "horarios",
+        element: <SchedulePage />,
       },
     ],
   },

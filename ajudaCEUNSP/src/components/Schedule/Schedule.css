@@ -1,0 +1,57 @@
+.schedule-container {
+  display: flex;
+  background-color: #4a90e2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.time-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.time-slot {
+  background-color: #243850;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.day-header {
+  background-color: #5fa4ee;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.class-slot {
+  background-color: #1c3a5a;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.subject {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
