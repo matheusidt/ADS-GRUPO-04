@@ -21,6 +21,12 @@ body {
   max-height: auto;
 }
 
+.navbar a{
+ transition: all .3s;
+}
+.navbar a:hover {
+  transform: scale(1.05) translateY(-5px);
+}
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 
