@@ -21,8 +21,8 @@ body {
   max-height: auto;
 }
 
-.navbar a{
- transition: all .3s;
+.navbar a {
+  transition: all 0.3s;
 }
 .navbar a:hover {
   transform: scale(1.05) translateY(-5px);
@@ -85,30 +85,6 @@ body {
     margin-top: 20px;
     justify-content: space-between;
     flex-direction: column;
-  }
-
-  /* Profile Section */
-  .profile {
-    background-color: #1e3a5b;
-    padding: 20px;
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .profile h2 {
-    font-size: 0.9em;
-  }
-
-  .user-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    background: url("../../imgs/user_profile.png") no-repeat center center;
-    background-size: contain;
   }
 
   /* Notices Section */

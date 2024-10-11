@@ -1,6 +1,6 @@
 import React from "react";
 import "./Schedule.css";
-import Profile from "../Profile";
+
 
 const Schedule = () => {
   const days = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
@@ -8,10 +8,6 @@ const Schedule = () => {
 
   return (
     <div className="schedule-container">
-      <div className="profileSchedule">
-        <Profile />
-      </div>
-
       {days.map((day, index) => (
         <div key={index} className="day-column">
           <div className="day-header">
