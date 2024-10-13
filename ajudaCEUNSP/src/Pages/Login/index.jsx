@@ -73,7 +73,9 @@ const Login = () => {
 
           <div className="container-buttons">
             <button
-              onClick={(e) => signIn(auth, email, passWord, e.preventDefault())}
+              onClick={(e) => {
+                signIn(auth, email, passWord, e.preventDefault());
+              }}
             >
               Entrar na plataforma
             </button>

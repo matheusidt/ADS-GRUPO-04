@@ -1,4 +1,5 @@
 import * as firebaseAuth from "firebase/auth";
+import { Navigate } from "react-router-dom";
 export const signIn = async (auth, email, password) => {
   await firebaseAuth
     .signInWithEmailAndPassword(auth, email, password)
@@ -9,7 +10,7 @@ export const signIn = async (auth, email, password) => {
       console.log(error);
       switch (error.code) {
         case "auth/invalid-credential":
-          alert("Senha Incorreta!");
+          alert("Email ou senha Incorretas!");
           break;
         case "auth/invalid-email":
           alert("Email Inválido!");

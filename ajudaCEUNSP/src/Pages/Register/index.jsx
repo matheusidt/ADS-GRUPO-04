@@ -13,7 +13,8 @@ const Register = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [passWord, setPassWord] = useState();
   const [email, setEmail] = useState();
-
+  const [name, setName] = useState();
+console.log(name)
   const auth = firebaseAuth.getAuth(app);
 
   const togglePasswordVisibility = () => {
@@ -39,6 +40,7 @@ const Register = () => {
             <label htmlFor="name">Nome</label>
             <div className="input-icon">
               <input
+                onChange={(e) => setName(e.currentTarget.value)}
                 type="text"
                 id="name"
                 name="name"
@@ -125,7 +127,7 @@ const Register = () => {
             </div>
             <Link
               className="signUp-button"
-              onClick={() => signUp(auth, email, passWord)}
+              onClick={() => signUp(auth, email, passWord, name)}
             >
               Cadastrar
             </Link>
