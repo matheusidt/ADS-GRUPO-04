@@ -1,10 +1,9 @@
 import * as firebaseAuth from "firebase/auth";
-import { Navigate } from "react-router-dom";
 export const signIn = async (auth, email, password) => {
   await firebaseAuth
     .signInWithEmailAndPassword(auth, email, password)
     .then(() => {
-      console.log("Usuario logado!!");
+      // console.log("Usuario logado!!");
     })
     .catch((error) => {
       console.log(error);

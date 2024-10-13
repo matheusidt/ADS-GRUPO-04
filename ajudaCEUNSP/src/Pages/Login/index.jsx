@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./style.css";
 import { FaKey } from "react-icons/fa6";
 import { PiIdentificationBadgeFill } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signIn } from "../../utils/signIn";
 import * as firebaseAuth from "firebase/auth";
 import { app } from "../../utils/fireBaseApp";
@@ -12,7 +12,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [passWord, setPassWord] = useState();
   const [email, setEmail] = useState();
-
+  const navigate = useNavigate();
   const auth = firebaseAuth.getAuth(app);
 
   const togglePasswordVisibility = () => {
@@ -74,7 +74,10 @@ const Login = () => {
           <div className="container-buttons">
             <button
               onClick={(e) => {
-                signIn(auth, email, passWord, e.preventDefault());
+                if (auth) {
+                  signIn(auth, email, passWord, e.preventDefault());
+                  navigate("/")
+                }
               }}
             >
               Entrar na plataforma

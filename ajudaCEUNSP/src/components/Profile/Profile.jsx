@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Profile.css";
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { app } from "../../utils/fireBaseApp";
+
 const Profile = () => {
-  const user = getAuth(app).currentUser;
+  const auth = getAuth(app);
+  const [currentUser, setCurrentUser] = useState(null);
+  auth.onAuthStateChanged((user) => setCurrentUser(user));
   return (
     <div className="profile">
       <div className="user-photo"></div>
       <h2>Centro Universitário em Itu e Salto SP</h2>
-      <p>{user.displayName}</p>
-      <p>CPF: CPF</p>
+      {currentUser ? (
+        <>
+          <p>{currentUser.displayName}</p>
+          <p>CPF: </p>
+        </>
+      ) : (
+        <p>Usuário não está autenticado.</p>
+      )}
     </div>
   );
 };

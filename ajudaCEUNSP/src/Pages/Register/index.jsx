@@ -14,7 +14,7 @@ const Register = () => {
   const [passWord, setPassWord] = useState();
   const [email, setEmail] = useState();
   const [name, setName] = useState();
-console.log(name)
+
   const auth = firebaseAuth.getAuth(app);
 
   const togglePasswordVisibility = () => {
@@ -128,6 +128,7 @@ console.log(name)
             <Link
               className="signUp-button"
               onClick={() => signUp(auth, email, passWord, name)}
+              to={"/login"}
             >
               Cadastrar
             </Link>

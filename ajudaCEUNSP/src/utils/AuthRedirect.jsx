@@ -10,12 +10,9 @@ function AuthRedirect() {
   useEffect(() => {
     // Monitorar mudanças no estado de autenticação
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
+      if (!user) {
         // Se o usuário está logado, redirecionar para a página desejada
-        navigate("/"); // Substitua "/dashboard" pela rota desejada
-      } else {
-        // Se o usuário não está logado, redirecionar para a página de login
-        navigate("/login");
+        navigate("/login"); // Substitua "/dashboard" pela rota desejada
       }
     });
 

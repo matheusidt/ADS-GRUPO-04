@@ -6,7 +6,6 @@ export const signUp = async (auth, email, password, displayName) => {
     .createUserWithEmailAndPassword(auth, email, password)
     .then((data) => {
       const user = data.user;
-
       // Atualizando o perfil do usuário com nome e imagem de perfil
       firebaseAuth
         .updateProfile(user, {
