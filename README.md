@@ -31,7 +31,7 @@ O objetivo principal do projeto é facilitar a vida dos alunos da CEUNSP, elimin
 Use o comando abaixo para instalar as dependências necessárias:
 
 ```bash
-npm install react-router-dom react-icons react-redux @mui/material @emotion/react @emotion/styled react-bootstrap bootstrap firebase
+npm install react-router-dom react-icons react-redux @mui/material @emotion/react @emotion/styled react-bootstrap bootstrap firebase gh-pages --save-dev
 ``` 
 # Lista de Pendências Restantes
 
