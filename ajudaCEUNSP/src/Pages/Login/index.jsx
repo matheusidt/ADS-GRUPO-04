@@ -66,17 +66,30 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="form-group remember-me">
-            <input type="checkbox" id="remember" />
-            <label htmlFor="remember">Lembrar</label>
-          </div>
-
           <div className="container-buttons">
             <button
               onClick={(e) => {
                 if (auth) {
-                  signIn(auth, email, passWord, e.preventDefault());
-                  navigate("/")
+                  e.preventDefault();
+                  firebaseAuth
+                    .signInWithEmailAndPassword(auth, email, passWord)
+                    .then(() => {
+                      // console.log("Usuario logado!!");
+                      navigate("/");
+                    })
+                    .catch((error) => {
+                      console.log(error);
+                      switch (error.code) {
+                        case "auth/invalid-credential":
+                          alert("Email ou senha Incorretas!");
+                          break;
+                        case "auth/invalid-email":
+                          alert("Email Inválido!");
+                          break;
+                        default:
+                          break;
+                      }
+                    });
                 }
               }}
             >
@@ -86,9 +99,9 @@ const Login = () => {
               Cadastrar
             </Link>
           </div>
-          <a href="#" className="forgot-password">
+          {/* <a href="#" className="forgot-password">
             Esqueceu sua senha?
-          </a>
+          </a> */}
         </form>
       </div>
     </div>

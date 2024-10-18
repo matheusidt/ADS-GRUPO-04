@@ -135,8 +135,10 @@ body {
     vertical-align: middle; /* Centraliza a checkbox verticalmente */
   }
 
-  button,
   .signUp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: #1a2738;
@@ -148,7 +150,6 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  button,
   .signUp-button:hover {
     background-color: #3a4b61;
   }
@@ -319,8 +320,10 @@ body {
     vertical-align: middle; /* Centraliza a checkbox verticalmente */
   }
 
-  button,
   .signUp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: #1a2738;
@@ -332,7 +335,6 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  button,
   .signUp-button:hover {
     background-color: #3a4b61;
   }
@@ -500,8 +502,10 @@ body {
     vertical-align: middle; /* Centraliza a checkbox verticalmente */
   }
 
-  button,
   .signUp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: #1a2738;
@@ -513,7 +517,6 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  button,
   .signUp-button:hover {
     background-color: #3a4b61;
   }
@@ -678,8 +681,10 @@ body {
     vertical-align: middle; /* Centraliza a checkbox verticalmente */
   }
 
-  button,
   .signUp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: #1a2738;
@@ -691,7 +696,6 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  button,
   .signUp-button:hover {
     background-color: #3a4b61;
   }
@@ -860,8 +864,10 @@ body {
     vertical-align: middle; /* Centraliza a checkbox verticalmente */
   }
 
-  button,
   .signUp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: #1a2738;
@@ -873,7 +879,6 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  button,
   .signUp-button:hover {
     background-color: #3a4b61;
   }

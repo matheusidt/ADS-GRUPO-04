@@ -10,8 +10,9 @@ import { app } from "../../utils/fireBaseApp";
 import * as firebaseAuth from "firebase/auth";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [cadastrado, setCadastrado] = useState(false);
   const [passWord, setPassWord] = useState();
+  const [CPF, setCPF] = useState();
   const [email, setEmail] = useState();
   const [name, setName] = useState();
 
@@ -21,9 +22,20 @@ const Register = () => {
     setShowPassword(!showPassword);
   };
 
-  const toggleConfirmPasswordVisibility = () => {
-    setShowConfirmPassword(!showConfirmPassword);
-  };
+  function formataCPF(cpf) {
+    //retira os caracteres indesejados...
+    if (cpf) {
+      if (cpf.length < 9) {
+        alert("CPF Inválido!");
+        return;
+      } else {
+        cpf = cpf.replace(/[^\d]/g, "");
+
+        //realizar a formatação...
+        return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+      }
+    }
+  }
 
   return (
     <div className="container">
@@ -77,7 +89,8 @@ const Register = () => {
                 type="text"
                 id="cpf"
                 name="cpf"
-                placeholder="Digite seu CPF"
+                onChange={(e) => setCPF(e.target.value)}
+                placeholder="Ex: 12345678909"
               />
               <i className="icon">
                 <PiIdentificationBadgeFill />
@@ -105,34 +118,16 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Campo Confirmar Senha */}
-          <div className="form-group">
-            <label htmlFor="confirm-password">Confirmar Senha</label>
-            <div className="input-icon">
-              <input
-                type={showConfirmPassword ? "text" : "password"}
-                id="confirm-password"
-                name="confirm-password"
-                placeholder="Confirme sua senha"
-              />
-              <i className="icon">
-                <FaKey />
-              </i>
-              <i
-                className="toggle-password"
-                onClick={toggleConfirmPasswordVisibility}
-              >
-                {showConfirmPassword ? "🙈" : "👁️"}
-              </i>
-            </div>
-            <Link
-              className="signUp-button"
-              onClick={() => signUp(auth, email, passWord, name)}
-              to={"/login"}
-            >
-              Cadastrar
-            </Link>
-          </div>
+          <Link
+            className="signUp-button"
+            onClick={() => {
+              formataCPF(CPF);
+              signUp(auth, email, passWord, name);
+            }}
+            to={"/login"}
+          >
+            Cadastrar
+          </Link>
         </form>
       </div>
     </div>

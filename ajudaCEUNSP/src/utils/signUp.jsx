@@ -12,7 +12,7 @@ export const signUp = async (auth, email, password, displayName) => {
           displayName: displayName,
         })
         .then(() => {
-          // console.log("Perfil atualizado com sucesso!", user);
+          alert("Usuário criado com sucesso!");
         })
         .catch((error) => {
           // console.error("Erro ao atualizar o perfil:", error);
@@ -25,6 +25,9 @@ export const signUp = async (auth, email, password, displayName) => {
           break;
         case "auth/invalid-email":
           alert("Email Inválido!");
+          break;
+        case "auth/weak-password":
+          alert("A senha é inválida, precisa ter pelo menos 6 caracteres.");
           break;
         default:
           alert("Erro desconhecido ao cadastrar o usuário.");
