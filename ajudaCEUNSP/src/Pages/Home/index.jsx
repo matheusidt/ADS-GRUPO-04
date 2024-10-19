@@ -3,6 +3,7 @@ import "./Home.css";
 import NoticesTabel from "../../components/Notices";
 import Header from "../../components/Header";
 import Profile from "../../components/Profile/Profile";
+import { database } from "../../utils/fireBaseApp";
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
       <div className="main-content">
         <Profile/>
         <div className="notices">
-          <NoticesTabel />
+          <NoticesTabel database={database}/>
         </div>
       </div>
     </div>

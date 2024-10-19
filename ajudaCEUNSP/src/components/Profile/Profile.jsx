@@ -10,14 +10,15 @@ const Profile = () => {
   return (
     <div className="profile">
       <div className="user-photo"></div>
-      <h2>Centro Universitário em Itu e Salto SP</h2>
       {currentUser ? (
         <>
+          <h2>Centro Universitário em Itu e Salto SP</h2>
+
           <p>{currentUser.displayName}</p>
           <p>CPF: </p>
         </>
       ) : (
-        <p>Usuário não está autenticado.</p>
+        <p>Carregando Perfil...</p>
       )}
     </div>
   );
