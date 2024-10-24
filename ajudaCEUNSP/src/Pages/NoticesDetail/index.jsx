@@ -10,7 +10,7 @@ const NoticesDetail = () => {
     <div className="container">
       <Header />
       <div className="main-content">
-        <Profile />
+        <Profile database={database} />
         <NoticesDetailContent database={database} />
       </div>
     </div>

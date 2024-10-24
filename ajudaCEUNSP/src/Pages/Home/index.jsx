@@ -11,7 +11,7 @@ const Home = () => {
     <div className="container">
       <Header />
       <div className="main-content">
-        <Profile/>
+        <Profile database={database}/>
         <div className="notices">
           <NoticesTabel database={database}/>
         </div>

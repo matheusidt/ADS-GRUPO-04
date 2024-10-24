@@ -8,11 +8,13 @@ import { signUp } from "../../utils/signUp";
 import { Link } from "react-router-dom";
 import { app } from "../../utils/fireBaseApp";
 import * as firebaseAuth from "firebase/auth";
+import { getDatabase, ref, set } from "firebase/database";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [cadastrado, setCadastrado] = useState(false);
   const [passWord, setPassWord] = useState();
   const [CPF, setCPF] = useState();
+  const RGM = Math.floor(Math.random() * 99999999);
   const [email, setEmail] = useState();
   const [name, setName] = useState();
 
@@ -36,6 +38,17 @@ const Register = () => {
       }
     }
   }
+
+  const writeUserData = (userId, name, email, cpf, rgm) => {
+    const db = getDatabase();
+    const reference = ref(db, "users/" + userId); // Ref para o caminho onde salvar os dados do usuário
+    set(reference, {
+      username: name,
+      email: email,
+      cpf: CPF,
+      rgm: RGM,
+    });
+  };
 
   return (
     <div className="container">
@@ -123,6 +136,7 @@ const Register = () => {
             onClick={() => {
               formataCPF(CPF);
               signUp(auth, email, passWord, name);
+              writeUserData(1, name, email, CPF);
             }}
             to={"/login"}
           >

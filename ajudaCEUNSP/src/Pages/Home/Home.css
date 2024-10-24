@@ -49,6 +49,10 @@ body {
     align-items: center;
   }
 
+  .logo-container h1 {
+    color: white;
+  }
+
   .logo img {
     height: 60px;
     margin-right: 10px;
@@ -158,6 +162,9 @@ body {
   .logo {
     display: flex;
     align-items: center;
+  }
+  .logo-container h1 {
+    color: white;
   }
 
   .logo img {
@@ -295,6 +302,9 @@ body {
     align-items: center;
   }
 
+  .logo-container h1 {
+    color: white;
+  }
   .logo img {
     height: 60px;
     margin-right: 10px;
@@ -422,6 +432,9 @@ body {
     align-items: center;
     background-color: #0d1c38;
     padding: 20px;
+    color: white;
+  }
+  .logo-container h1 {
     color: white;
   }
 
@@ -568,6 +581,9 @@ body {
     align-items: center;
     width: 20%;
   }
+  .logo-container h1 {
+    color: white;
+  }
   .logo {
     display: flex;
     align-items: center;
@@ -704,6 +720,9 @@ body {
     color: white;
   }
 
+  .logo-container h1 {
+    color: white;
+  }
   .logo-container {
     display: flex;
     justify-content: center;

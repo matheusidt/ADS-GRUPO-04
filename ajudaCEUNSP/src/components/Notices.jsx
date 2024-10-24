@@ -12,7 +12,7 @@ const NoticeTable = ({ database }) => {
       const snapshot = await get(child(dbRef, `avisos`));
       if (snapshot.exists()) {
         setWarnsData(snapshot.val()); // Armazena os dados no estado
-        console.log(snapshot.val());
+        // console.log(snapshot.val());
       } else {
         console.log("No data available");
       }

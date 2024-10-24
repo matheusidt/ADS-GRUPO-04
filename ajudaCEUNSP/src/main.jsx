@@ -8,6 +8,8 @@ import Cadastrar from "./Pages/Register";
 import Home from "./Pages/Home/index.jsx";
 import NoticesDetail from "./Pages/NoticesDetail/index.jsx";
 import SchedulePage from "./Pages/Schedule/index.jsx";
+import TalkWithTeacher from "./Pages/TalkWithTeacher/index.jsx";
+import { database } from "./utils/fireBaseApp.jsx";
 
 const router = createHashRouter([
   {
@@ -33,6 +35,10 @@ const router = createHashRouter([
       {
         path: "horarios",
         element: <SchedulePage />,
+      },
+      {
+        path: "talkToTeacher",
+        element: <TalkWithTeacher database={database} />,
       },
     ],
   },
