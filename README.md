@@ -32,11 +32,9 @@ Use o comando abaixo para instalar as dependências necessárias:
 
 ```bash
 npm install react-router-dom react-icons react-redux @mui/material @emotion/react @emotion/styled react-bootstrap bootstrap firebase gh-pages --save-dev
-``` 
-# Lista de Pendências Restantes
-
-(Lista de pendências a ser preenchida)
-
+```
+## Link do Projeto
+#### [Projeto](https://miguelraveli.github.io/grupo4ads/#/login)
 ## Integrantes do Grupo
 
 - Crislaine Francisca de Almeida
